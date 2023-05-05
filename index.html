@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Clon Pinterest</title>
+    <!-- Fuente adicional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-    <nav class="#navbar-pinterest"></nav>
-    <main class="#content"></main>
+    <nav id="navbar-pinterest">
+        <a class="link-ico-p" href="https://co.pinterest.com/"><img id="pinterest-icon" src="./images/icon-pinterest.png" alt="icon-pinterest"></a>
+        <a class="lash-st" href="#"><p class="text-bar-navegation">Inicio</p></a>
+        <a class="lash-st" href="#"><p class="text-bar-navegation">Hoy</p></a>
+        <a class="last-cr" href="#">Crear<img class="ico-expand" src="./images/icon-expand-more.svg" alt="expand"></a>
+        <div class="box-finder">
+            <div class="box-ico-search">
+                <img class="ico-search" src="./images/image-search.png" alt="icon-search">
+            </div>
+            <input class="finder" type="text" placeholder="Search">
+        </div>
+        <div id="notifications">
+            <a class="link-ico-r" href=""><img class="icon-right" src="./images/ico-notifications.svg" alt=""></a>
+        </div>
+        <div id="message">
+            <a class="link-ico-r" href=""><img class="icon-right" src="./images/icon-messages.png" alt=""></a>
+        </div>
+        <div id="profile-img">
+            <a class="link-ico-r" href=""><img class="icon-right-profile" src="./images/icon-profile.svg" alt=""></a>
+        </div>
+        <a class="link-ico-expand-more" href=""><img class="icon-expand-more" src="./images/icon-expand-more.svg" alt="icon-expand-more"></a>
+    </nav>
+    <main id="content">
+        
+    </main>
     </div>
 </body>
 </html>
