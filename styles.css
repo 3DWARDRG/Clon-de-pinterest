@@ -8,23 +8,26 @@ body{
 .container{
     box-sizing: border-box;
     padding: 0.5rem 1rem;
-    position: fixed;
     width: 100%;
 }
 
 #navbar-pinterest{
     display: flex;
+    width: auto;
     height: 50px;
-    justify-content: space-around;
-    align-items: center;
     padding: 0.5rem;
     padding-bottom: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .link-ico-p{
     display: flex;
     height: 100%;
-    width: 3rem;
+    width: 3.5rem;
     align-items: center;
     justify-content: center;
 }
@@ -120,7 +123,7 @@ body{
 
 #notifications{
     display: flex;
-    width: 3rem;
+    width: 3.5rem;
     height: 100%;
     margin-left: 10px;
 }
@@ -145,13 +148,13 @@ body{
 
 #message{
     display: flex;
-    width: 3rem;
+    width: 3.5rem;
     height: 100%;
 }
 
 #profile-img{
     display: flex;
-    width: 3rem;
+    width: 3.5rem;
     height: 100%;
 }
 
@@ -176,5 +179,306 @@ body{
 .icon-expand-more:hover{
     border-radius: 100%;
     background-color: rgb(218, 218, 218);
+}
+
+#content{
+    display: grid;
+    background-color: blueviolet;
+    width: auto;
+    height: 200rem;
+    padding: 0 50px;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(40, 2%);
+    grid-gap: 15px;
+    grid-auto-flow: dense;
+}
+
+.card-image{
+    border-radius: 1.7rem;
+}
+
+#img-1{
+    grid-column-end: span 1;
+    grid-row-end: span 5;
+    background-color: brown;
+}
+
+#img-2{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: green;
+}
+
+#img-3{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: chartreuse;
+}
+
+#img-4{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: chartreuse;
+}
+#img-5{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: chartreuse;
+}
+#img-6{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: chartreuse;
+}
+#img-7{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(123, 255, 0);
+}
+#img-8{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+#img-9{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-10{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-11{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-12{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-13{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-14{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-15{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-16{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-17{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-18{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-19{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-20{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-21{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-22{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-23{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-24{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-25{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: chartreuse;
+}
+
+#img-26{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-27{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-28{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-29{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+#img-30{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: chartreuse;
+}
+#img-31{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-32{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-33{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+#img-34{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-35{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: chartreuse;
+}
+
+#img-36{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-37{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-38{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+#img-39{}
+
+#img-40{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-41{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: chartreuse;
+}
+
+#img-42{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-43{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+
+#img-44{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: chartreuse;
+}
+
+#img-45{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-46{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: chartreuse;
+}
+#img-47{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-48{
+    grid-column: span 1;
+    grid-row: span 4;
+    background-color: rgb(0, 38, 255);
+}
+#img-49{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(255, 0, 0);
+}
+
+#img-50{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: chartreuse;
 }
 
