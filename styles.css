@@ -22,6 +22,7 @@ body{
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 1000;
 }
 
 .link-ico-p{
@@ -183,19 +184,119 @@ body{
 
 #content{
     display: grid;
-    background-color: blueviolet;
+    background-color: white;
     width: auto;
     height: 200rem;
-    padding: 0 50px;
-    grid-template-columns: repeat(5, auto);
+    padding: 0 3.571rem;
+    grid-template-columns: repeat(5, 14.4rem);
     grid-template-rows: repeat(40, 2%);
     grid-gap: 15px;
     grid-auto-flow: dense;
 }
 
 .card-image{
-    border-radius: 1.7rem;
+    border-radius: 0.922rem;
+    display: flex;
+    position: relative;
 }
+
+.card-image:hover .front-cap{
+    display: block;
+}
+
+.image-watch{
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.front-cap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    background-color: rgb(0, 0, 0, .5);
+    border-radius: inherit;
+    display: none;
+}
+
+.second-cap{
+    display: flex;
+    width: auto;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.elements-up{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.icon-more{
+    width: 15px;
+    height: 15px;
+}
+
+.save-img{
+    display: flex;
+    height: 3rem;
+    background-color: rgb(236, 4, 4);
+    width: 5.5rem;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+}
+
+.save-img:hover{
+    background-color: rgb(190, 0, 0);
+}
+
+.elements-bottom{
+    width: 100%;
+    height: 2rem;
+    align-self: flex-end;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.link-icon-small{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10rem;
+}
+
+.link-icon-small:hover{
+    background-color: rgb(215, 215, 215);
+}
+
+.img-small{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
 
 #img-1{
     grid-column-end: span 1;
@@ -416,7 +517,12 @@ body{
     grid-row: span 4;
     background-color: rgb(0, 38, 255);
 }
-#img-39{}
+
+#img-39{
+    grid-column: span 1;
+    grid-row: span 5;
+    background-color: chartreuse;
+}
 
 #img-40{
     grid-column: span 1;
