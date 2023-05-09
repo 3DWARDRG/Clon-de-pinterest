@@ -8,8 +8,7 @@
         padding: 0 3.571rem;
         grid-template-columns: repeat(5, 14.4rem);
         grid-template-rows: repeat(80, 2%);
-        grid-gap: 15px;
-        grid-auto-flow: dense;
+        grid-gap: 0.938rem;
     }
     
 }
@@ -23,7 +22,7 @@
         padding: 0 9rem;
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(60, 4.5rem);
-        grid-gap: 15px;
+        grid-gap: 0.938rem;
         justify-content: center;
     }
     
@@ -38,7 +37,7 @@
         padding: 0 3.5rem;
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(60, 4.5rem);
-        grid-gap: 15px;
+        grid-gap: 0.938rem;
         justify-content: center;
     }
     
@@ -53,7 +52,7 @@
         padding: 0 1rem;
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(60, 4.5rem);
-        grid-gap: 15px;
+        grid-gap: 0.938rem;
         justify-content: center;
     }
     
@@ -70,7 +69,7 @@
         padding: 0 7rem;
         grid-template-columns: repeat(3, 33%);
         grid-template-rows: repeat(80, 3.5rem);
-        grid-gap: 15px;
+        grid-gap: 0.938rem;
         justify-content: center;
     }
     
@@ -85,7 +84,7 @@
         padding: 0 5rem;
         grid-template-columns: repeat(3, 33%);
         grid-template-rows: repeat(80, 3.5rem);
-        grid-gap: 15px;
+        grid-gap: 0.938rem;
         justify-content: center;
     }
     
@@ -100,7 +99,7 @@
         padding: 0 1rem;
         grid-template-columns: repeat(3, 33%);
         grid-template-rows: repeat(80, 3.5rem);
-        grid-gap: 15px;
+        grid-gap: 0.938rem;
         justify-content: center;
     }
     
@@ -115,7 +114,7 @@
         padding: 0 6rem;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(100, 3.5rem);
-        grid-gap: 15px;
+        grid-gap: 0.938rem;
         justify-content: center;
     }
     
@@ -130,7 +129,7 @@
         padding: 0 1rem;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(100, 3.5rem);
-        grid-gap: 15px;
+        grid-gap: 0.938rem;
         justify-content: center;
     }
     
@@ -145,7 +144,7 @@
         padding: 0 1rem;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(100, 3.5rem);
-        grid-gap: 15px;
+        grid-gap: 0.938rem;
         justify-content: center;
     }
     

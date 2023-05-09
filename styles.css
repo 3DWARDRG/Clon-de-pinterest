@@ -11,10 +11,12 @@ body{
     width: 100%;
 }
 
+/* Elementos de la barra de navegacion */
+
 #navbar-pinterest{
     display: flex;
     width: auto;
-    height: 50px;
+    height: 3.125rem;
     padding: 0.5rem;
     padding-bottom: 1rem;
     justify-content: space-around;
@@ -24,6 +26,8 @@ body{
     background-color: white;
     z-index: 1000;
 }
+
+/*elementos del icono de pinterest */
 
 .link-ico-p{
     display: flex;
@@ -44,10 +48,14 @@ body{
     border-radius: 10rem;
 }
 
+/* Fin de elementos del icono de pinterest */
+
+/* Elementos de texto vinculado */
+
 .lash-st{
     display: flex;
     height: 90%;
-    width: 65px;
+    width: 4.063rem;
     border-radius: 1.5rem;
     justify-content: center;
     align-items: center;
@@ -68,13 +76,13 @@ body{
 .last-cr{
     display: flex;
     height: 90%;
-    width: 75px;
+    width: 4.688rem;
     border-radius: 1.5rem;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: black;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .last-cr:focus{
@@ -86,6 +94,10 @@ body{
     height: 1.5rem;
     width: 1.5rem;
 }
+
+/*Fin de elementos de texto vinculado  */
+
+/*Elementos de la barra de busqueda */
 
 .box-finder{
     display: flex;
@@ -100,19 +112,6 @@ body{
     background-color:  rgb(223, 223, 223);
 }
 
-.box-ico-search{
-    display: flex;
-    height: 100%;
-    width: 2.5rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.ico-search{
-    height: 20px;
-    width: 20px;
-}
-
 .finder{
     display: flex;
     width: 100%;
@@ -122,11 +121,29 @@ body{
     background-color: inherit;
 }
 
+.box-ico-search{
+    display: flex;
+    height: 100%;
+    width: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.ico-search{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+
+/*Fin de elementos de la barra de busqueda */
+
+/* Elementos de la parte derecha de la barra de navegacion */
+
 #notifications{
     display: flex;
     width: 3.5rem;
     height: 100%;
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 .link-ico-r{
@@ -182,6 +199,12 @@ body{
     background-color: rgb(218, 218, 218);
 }
 
+/* Fin de elemeentos de la parte derecha de la barra de navegacion */
+
+/* Elementos de las imagenes */
+
+
+/* Cuadricula y forma de ubicacion de los elementos en grid */
 #content{
     display: grid;
     background-color: white;
@@ -190,9 +213,11 @@ body{
     padding: 0 3.571rem;
     grid-template-columns: repeat(5, 14.4rem);
     grid-template-rows: repeat(40, 2%);
-    grid-gap: 15px;
+    grid-gap: 0.938rem;
     grid-auto-flow: dense;
 }
+
+/* clase diseñada para darle contorno y ubicacion parar lograr el efecto de superposicion de los elementos */
 
 .card-image{
     border-radius: 0.922rem;
@@ -204,11 +229,22 @@ body{
     display: block;
 }
 
+
+/* Clase diseñada para controlar el comportamiento de las imagenes y su proporcion dentro de sus elementos padres */
+
 .image-watch{
     width: 100%;
     object-fit: cover;
     border-radius: inherit;
 }
+
+
+
+/* Elementos superpuestos */
+
+
+
+/* Clase diseñada para albergar todos los elementos superpuestos */
 
 .front-cap{
     position: absolute;
@@ -216,11 +252,13 @@ body{
     right: 0;
     left: 0;
     bottom: 0;
-    padding: 15px;
+    padding: 0.938rem;
     background-color: rgb(0, 0, 0, .5);
     border-radius: inherit;
     display: none;
 }
+
+/* Clase diseñada para organizar los elementos y evitar desactivar el display: none en la .front-cap */
 
 .second-cap{
     display: flex;
@@ -231,6 +269,8 @@ body{
     align-items: flex-start;
 }
 
+/* Clase diseñada para dividir los elementos de la parte superior, de los elementos de la parte inferior */
+
 .elements-up{
     display: flex;
     width: 100%;
@@ -238,6 +278,8 @@ body{
     align-items: center;
     
 }
+
+/* Texto superior */
 
 .description{
     display: flex;
@@ -247,9 +289,11 @@ body{
 }
 
 .icon-more{
-    width: 15px;
-    height: 15px;
+    width: 0.938rem;
+    height: 0.938rem;
 }
+
+/* boton de guardar imagen */
 
 .save-img{
     display: flex;
@@ -267,6 +311,8 @@ body{
 .save-img:hover{
     background-color: rgb(190, 0, 0);
 }
+
+/* Clase diseñada para dividir los elementos de la parte inferior, de los elementos de la parte superior */
 
 .elements-bottom{
     width: 100%;
@@ -298,293 +344,305 @@ body{
 }
 
 
+/* Fin de elementos superpuestos */
+
+
+
+/* Clases de cartas, ubicacion en la cuadricula de grid */
+
+:root{
+    --background-color-cards: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+
 #img-1{
     grid-column-end: span 1;
     grid-row-end: span 5;
-    background-color: brown;
+    background: var(--background-color-cards);
 }
 
 #img-2{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: green;
+    background-color: var(--background-color-cards);
 }
 
 #img-3{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: chartreuse;
+    background-color: var(--background-color-cards);
 }
 
 #img-4{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: chartreuse;
+    background-color: var(--background-color-cards);
 }
 #img-5{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: chartreuse;
+    background-color: var(--background-color-cards);
 }
 #img-6{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: chartreuse;
+    background-color: var(--background-color-cards);
 }
 #img-7{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(123, 255, 0);
+    background-color: var(--background-color-cards);
 }
 #img-8{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 #img-9{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-10{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-11{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-12{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-13{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-14{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-15{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-16{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-17{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-18{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-19{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-20{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-21{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-22{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-23{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-24{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-25{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: chartreuse;
+       background-color: var(--background-color-cards);
 }
 
 #img-26{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-27{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-28{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-29{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 #img-30{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: chartreuse;
+       background-color: var(--background-color-cards);
 }
 #img-31{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-32{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-33{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 #img-34{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-35{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: chartreuse;
+       background-color: var(--background-color-cards);
 }
 
 #img-36{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-37{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-38{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-39{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: chartreuse;
+       background-color: var(--background-color-cards);
 }
 
 #img-40{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-41{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: chartreuse;
+       background-color: var(--background-color-cards);
 }
 
 #img-42{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-43{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 
 #img-44{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: chartreuse;
+       background-color: var(--background-color-cards);
 }
 
 #img-45{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-46{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: chartreuse;
+       background-color: var(--background-color-cards);
 }
 #img-47{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-48{
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(0, 38, 255);
+    background-color: var(--background-color-cards);
 }
 #img-49{
     grid-column: span 1;
     grid-row: span 3;
-    background-color: rgb(255, 0, 0);
+    background-color: var(--background-color-cards);
 }
 
 #img-50{
     grid-column: span 1;
     grid-row: span 5;
-    background-color: chartreuse;
+    background-color: var(--background-color-cards);
 }
 
+/* Fin de elementos de las imagenes */
