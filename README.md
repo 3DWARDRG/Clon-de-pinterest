@@ -1,0 +1,3 @@
+Mi proyecto de Clon de pinterest hasta el momento el mas retardor, en cuanto a aprendizaje en el que mas he aprendido y con el que he entendido la manera de mezclar grif y flexbox. Las recomendaciones que hizo mi sensei "Jose" no las tome en cuenta debido a que realize muchos avances momentos previos a ellas, con informacion de varios sitios web y la documentacion del campus logre terminar mi proyecto y quedo satisfecho con el resultado.
+
+Agradezco conocimientos impartidos por mis docentes y/o compañeros. Agradezco por su revision y recomendaciones para futuros proyectos. Gracias
